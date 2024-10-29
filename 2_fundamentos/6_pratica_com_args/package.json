@@ -1,0 +1,14 @@
+{
+  "name": "5_module_externo",
+  "version": "1.0.0",
+  "description": "Npm study",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cadu Conrado",
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
+}
