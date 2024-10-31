@@ -14,12 +14,13 @@ const server = http.createServer((req, res) => {
       return res.end();
     });
   } else {
+    //tratamento para caso o arquivo já tenha algo escrito
     fs.readFile("file.txt", function (error, data) {
       console.log(name);
       if (!data) {
-        newName = name + ",\r\n";
+        newName = name;
       } else {
-        newName = name + ",\r\n";
+        newName = ",\r\n" + name;
       }
       fs.appendFile("file.txt", newName, function (error, data) {
         res.writeHead(302, {
